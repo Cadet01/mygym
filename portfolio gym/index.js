@@ -16,7 +16,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " activeDot";
-  setTimeout(showSlides, 6000); // Change image every 2 seconds
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 //hamburger and list item
 const hamburger = document.querySelector(".hamburger");
@@ -28,4 +28,4 @@ hamburger.addEventListener("click", ()=>{
 document.querySelectorAll(".navlinks").forEach(n=>n.addEventListener("click",()=>{
   hamburger.classList.remove("burgerActive");
   navList.classList.remove("showMenu");
-}))
+}));
